@@ -1,0 +1,112 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "apexPMD.runOnFileOpen": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontSize": 10,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.insertSpaces": true,
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.roundedSelection": true,
+    "editor.smoothScrolling": true,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 121,
+    "editor.wrappingIndent": "same",
+    "editor.rulers": [
+        80,
+        120,
+        160
+    ],
+    "eslint.nodePath": "%USERPROFILE%\\AppData\\Roaming\\npm\\node_modules",
+    "eslint.options": {
+        "configFile": "../configs/.eslintrc.json",
+    },
+    "files.encoding": "utf8",
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {},
+    "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false,
+    "salesforcedx-vscode-core.show-cli-success-msg": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontWeightBold": "normal",
+    "window.openFoldersInNewWindow": "on",
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile",
+    "[javascript]": {
+        //"editor.tabSize": 4,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        //"editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        //"editor.defaultFormatter": "mikeburgh.xml-format",
+        //"editor.defaultFormatter": "redhat.vscode-xml",
+    },
+    "[json]": {
+        //"editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.detectIndentation": false,
+        //"editor.tabSize": 4
+    },
+    "[apex]": {
+        "editor.defaultFormatter": "zachflower.uncrustify",
+        //"editor.tabSize": 4
+    },
+    "redhat.telemetry.enabled": true,
+    "uncrustify.configPath.osx": "../configs/uncrustify.cfg",
+    "uncrustify.configPath.windows": "../configs/uncrustify.cfg",
+    "uncrustify.configPath.linux": "",
+    "uncrustify.useTempFile": false,
+    "uncrustify.executablePath.linux": "",
+    "uncrustify.executablePath.windows": "uncrustify",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "settingsSync.ignoredExtensions": [],
+    "window.commandCenter": false,
+    "files.associations": {
+        "*.xml": "xml"
+    },
+    "yaml.schemas": {
+        "file:///c%3A/Users/pedro.soto/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.bitbucket.enabled": true,
+    "atlascode.jira.enabled": false,
+    "apexPMD.rulesets": [
+        "../configs/pmd-apex-ruleset.xml"
+    ],
+    "prettier.bracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "xml.symbols.maxItemsComputed": 50000,
+    "editor.codeActionsOnSave": {}
+}
+//"salesforcedx-vscode-apex.java.home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
+//"salesforcedx-vscode-apex.java.home": "C:\\jre1.8.0_202",
+//"salesforcedx-vscode-apex.java.home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
+//"apexPMD.showStdErr": true,
+//"apexPMD.showStdOut": true,
+//"eslint.alwaysShowStatus": true,
+//"vscode-edge-devtools.webhint": false,
+//"bracket-pair-colorizer-2.depreciation-notice": false,
