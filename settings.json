@@ -1,6 +1,5 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
-    "apexPMD.runOnFileOpen": true,
     "editor.detectIndentation": false,
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 10,
@@ -8,7 +7,6 @@
     "editor.formatOnSave": false,
     "editor.formatOnType": false,
     "editor.insertSpaces": true,
-    "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "none",
@@ -21,30 +19,33 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 121,
+    "editor.wordWrapColumn": 200,
     "editor.wrappingIndent": "same",
     "editor.rulers": [
-        80,
         120,
-        160
+        200
     ],
     "eslint.nodePath": "%USERPROFILE%\\AppData\\Roaming\\npm\\node_modules",
     "eslint.options": {
         "configFile": "../configs/.eslintrc.json",
     },
     "files.encoding": "utf8",
+    "files.insertFinalNewline": false,
+    //"files.trimTrailingWhitespace": true,
     "files.trimTrailingWhitespace": true,
     "files.exclude": {},
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false,
-    "salesforcedx-vscode-core.show-cli-success-msg": false,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "window.openFoldersInNewWindow": "on",
     "workbench.colorTheme": "Monokai",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.showTabs": "multiple",
+    //"workbench.editor.wrapTabs": true,
     "[javascript]": {
         //"editor.tabSize": 4,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -52,6 +53,7 @@
     "[xml]": {
         //"editor.tabSize": 4,
         "editor.detectIndentation": false,
+        "editor.defaultFormatter": "mikeburgh.xml-format",
         //"editor.defaultFormatter": "mikeburgh.xml-format",
         //"editor.defaultFormatter": "redhat.vscode-xml",
     },
@@ -77,30 +79,98 @@
     "uncrustify.executablePath.linux": "",
     "uncrustify.executablePath.windows": "uncrustify",
     "explorer.confirmDelete": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    //"terminal.integrated.enableMultiLinePasteWarning": false,
     "git.autofetch": true,
     "git.confirmSync": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "settingsSync.ignoredExtensions": [],
     "window.commandCenter": false,
     "files.associations": {
-        "*.xml": "xml"
+        "*.xml": "xml",
+        "*.cls": "apex",
+        "*.trigger": "apex"
     },
+    "uncrustify.langOverrides": {
+        "apex": "JAVA"
+    },
+
     "yaml.schemas": {
         "file:///c%3A/Users/pedro.soto/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
-    "atlascode.bitbucket.enabled": true,
-    "atlascode.jira.enabled": false,
-    "apexPMD.rulesets": [
-        "../configs/pmd-apex-ruleset.xml"
+    //"atlascode.bitbucket.enabled": true,
+    //"atlascode.jira.enabled": false,
+    "xml.symbols.maxItemsComputed": 100000,
+    "editor.codeActionsOnSave": {},
+    "git.openRepositoryInParentFolders": "always",
+    "apexPMD.runOnFileOpen": true,
+    "salesforcedx-vscode-apex-debugger.connectionTimeoutMs": 120000,
+    "xml.server.vmargs": "-Xmx1024M",
+    "visualforce.format.endWithNewline": true,
+    "visualforce.format.indentInnerHtml": true,
+    "visualforce.format.maxPreserveNewLines": 1,
+    "salesforcedx-vscode-slds.basic.override": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.productIconTheme": "macos-modern",
+    "terminal.explorerKind": "external",
+    "salesforcedx-vscode-core.experimental.enableSourceTrackingForDeployAndRetrieve": false,
+    "salesforcedx-vscode-apex.java.home": "",
+    "salesforcedx-vscode-core.clearOutputTab": true,
+    "salesforcedx-vscode-core.SF_LOG_LEVEL": "error",
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.codeLens": true,
+    "diffEditor.maxFileSize": 0,
+    "diffEditor.wordWrap": "off",
+    "typescript.tsserver.maxTsServerMemory": 10485760,
+    "editor.largeFileOptimizations": false,
+    "workbench.list.horizontalScrolling": true,
+    "workbench.list.typeNavigationMode": "trigger",
+    "workbench.reduceMotion": "off",
+    "workbench.startupEditor": "none",
+    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "apexPMD.commandBufferSize": 8,
+    "SFDoc.FileHeaderProperties": [
+
+        {
+            "name": "description"
+        },
+        {
+            "name": "author",
+            "defaultValue": "Pedro Soto"
+        },
+        {
+            "name": "Softtek"
+        },
+        {
+            "name": "last modified on",
+            "defaultValue": "$date"
+        },
+        {
+            "name": "last modified by",
+            "defaultValue": "Pedro Soto"
+        }
     ],
+    "codeAnalyzer.pMD.customConfigFile": "../configs/pmd-apex-ruleset.pmd"
+    //"scm.showHistoryGraph": false
+    /*
     "prettier.bracketSameLine": true,
     "prettier.jsxSingleQuote": true,
     "prettier.singleQuote": true,
     "prettier.tabWidth": 4,
-    "xml.symbols.maxItemsComputed": 50000,
-    "editor.codeActionsOnSave": {}
+    "prettier.configPath": ".prettierrc"
+    "prettier.printWidth": 600,
+    "prettier.proseWrap": "never",
+    "prettier.requireConfig": true,
+    */
+
+    //"apexPMD.rulesets": [
+    //    "../configs/pmd-apex-ruleset.xml"
+    //]
 }
 //"salesforcedx-vscode-apex.java.home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
 //"salesforcedx-vscode-apex.java.home": "C:\\jre1.8.0_202",
