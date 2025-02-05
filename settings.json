@@ -21,24 +21,34 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 200,
     "editor.wrappingIndent": "same",
+    "editor.largeFileOptimizations": false,
+    "editor.codeActionsOnSave": {},
     "editor.rulers": [
         120,
         200
     ],
     "eslint.nodePath": "%USERPROFILE%\\AppData\\Roaming\\npm\\node_modules",
     "eslint.options": {
-        "configFile": "../configs/.eslintrc.json",
+        "configFile": "../configs/.eslintrc.json"
     },
     "files.encoding": "utf8",
     "files.insertFinalNewline": false,
-    //"files.trimTrailingWhitespace": true,
     "files.trimTrailingWhitespace": true,
     "files.exclude": {},
+    "files.associations": {
+        "*.xml": "xml",
+        "*.cls": "apex",
+        "*.trigger": "apex"
+    },
+    //"files.trimTrailingWhitespace": true,
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.explorerKind": "external",
+    //"terminal.integrated.enableMultiLinePasteWarning": false,
     "window.openFoldersInNewWindow": "on",
+    "window.commandCenter": false,
     "workbench.colorTheme": "Monokai",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.showTabs": "multiple",
@@ -53,7 +63,7 @@
     "[xml]": {
         //"editor.tabSize": 4,
         "editor.detectIndentation": false,
-        "editor.defaultFormatter": "mikeburgh.xml-format",
+        "editor.defaultFormatter": "mikeburgh.xml-format"
         //"editor.defaultFormatter": "mikeburgh.xml-format",
         //"editor.defaultFormatter": "redhat.vscode-xml",
     },
@@ -64,12 +74,15 @@
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.detectIndentation": false,
+        "editor.detectIndentation": false
         //"editor.tabSize": 4
     },
     "[apex]": {
-        "editor.defaultFormatter": "zachflower.uncrustify",
+        "editor.defaultFormatter": "zachflower.uncrustify"
         //"editor.tabSize": 4
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "redhat.telemetry.enabled": true,
     "uncrustify.configPath.osx": "../configs/uncrustify.cfg",
@@ -79,19 +92,10 @@
     "uncrustify.executablePath.linux": "",
     "uncrustify.executablePath.windows": "uncrustify",
     "explorer.confirmDelete": false,
-    //"terminal.integrated.enableMultiLinePasteWarning": false,
     "git.autofetch": true,
     "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
     "settingsSync.ignoredExtensions": [],
-    "window.commandCenter": false,
-    "files.associations": {
-        "*.xml": "xml",
-        "*.cls": "apex",
-        "*.trigger": "apex"
-    },
-    "uncrustify.langOverrides": {
-        "apex": "JAVA"
-    },
 
     "yaml.schemas": {
         "file:///c%3A/Users/pedro.soto/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -99,29 +103,23 @@
     //"atlascode.bitbucket.enabled": true,
     //"atlascode.jira.enabled": false,
     "xml.symbols.maxItemsComputed": 100000,
-    "editor.codeActionsOnSave": {},
-    "git.openRepositoryInParentFolders": "always",
-    "apexPMD.runOnFileOpen": true,
-    "salesforcedx-vscode-apex-debugger.connectionTimeoutMs": 120000,
     "xml.server.vmargs": "-Xmx1024M",
     "visualforce.format.endWithNewline": true,
     "visualforce.format.indentInnerHtml": true,
     "visualforce.format.maxPreserveNewLines": 1,
+    "salesforcedx-vscode-apex-debugger.connectionTimeoutMs": 120000,
     "salesforcedx-vscode-slds.basic.override": true,
-    "workbench.iconTheme": "vscode-icons",
-    "vsicons.dontShowNewVersionMessage": true,
-    "workbench.productIconTheme": "macos-modern",
-    "terminal.explorerKind": "external",
     "salesforcedx-vscode-core.experimental.enableSourceTrackingForDeployAndRetrieve": false,
     "salesforcedx-vscode-apex.java.home": "",
     "salesforcedx-vscode-core.clearOutputTab": true,
     "salesforcedx-vscode-core.SF_LOG_LEVEL": "error",
+    "vsicons.dontShowNewVersionMessage": true,
     "diffEditor.maxComputationTime": 0,
     "diffEditor.codeLens": true,
     "diffEditor.maxFileSize": 0,
     "diffEditor.wordWrap": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
     "typescript.tsserver.maxTsServerMemory": 10485760,
-    "editor.largeFileOptimizations": false,
     "workbench.list.horizontalScrolling": true,
     "workbench.list.typeNavigationMode": "trigger",
     "workbench.reduceMotion": "off",
@@ -129,13 +127,9 @@
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "apexPMD.commandBufferSize": 8,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "macos-modern",
     "SFDoc.FileHeaderProperties": [
-
         {
             "name": "description"
         },
@@ -155,7 +149,14 @@
             "defaultValue": "Pedro Soto"
         }
     ],
-    "codeAnalyzer.pMD.customConfigFile": "../configs/pmd-apex-ruleset.pmd"
+    "apexPMD.commandBufferSize": 8,
+    "apexPMD.runOnFileOpen": true,
+    "apexPMD.rulesets": [
+        "../configs/pmd-apex-ruleset.xml"
+    ],
+    "codeAnalyzer.pMD.customConfigFile": "../configs/pmd-apex-ruleset.xml",
+    "codeAnalyzer.analyzeOnOpen.enabled": true,
+    "codeAnalyzer.analyzeOnSave.enabled": true
     //"scm.showHistoryGraph": false
     /*
     "prettier.bracketSameLine": true,
@@ -167,10 +168,6 @@
     "prettier.proseWrap": "never",
     "prettier.requireConfig": true,
     */
-
-    //"apexPMD.rulesets": [
-    //    "../configs/pmd-apex-ruleset.xml"
-    //]
 }
 //"salesforcedx-vscode-apex.java.home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
 //"salesforcedx-vscode-apex.java.home": "C:\\jre1.8.0_202",
